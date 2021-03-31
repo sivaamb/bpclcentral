@@ -34,8 +34,8 @@ COPY apache2.conf /etc/apache2/
 COPY ixed.7.0.lin /usr/lib/php/20151012/
 COPY php.ini /etc/php/7.0/apache2/
 COPY root /var/spool/cron/crontabs/
-COPY .htaccess /var/www/html/central/
-COPY web/.htaccess /var/www/html/central/web/
+#COPY .htaccess /var/www/html/central/
+#COPY web/.htaccess /var/www/html/central/web/
 
 
 RUN update-alternatives --set php /usr/bin/php7.0
