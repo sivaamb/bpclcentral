@@ -28,8 +28,8 @@ RUN a2enmod rewrite
 #RUN service apache2 restart
 
 COPY apache2.conf /etc/apache2/
-ADD central.tar.gz /var/www/html/
-RUN chmod -R 777 /var/www/html/central
+#ADD central.tar.gz /var/www/html/
+#RUN chmod -R 777 /var/www/html/central
 
 COPY ixed.7.0.lin /usr/lib/php/20151012/
 COPY php.ini /etc/php/7.0/apache2/
